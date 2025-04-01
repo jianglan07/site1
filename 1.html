@@ -1,0 +1,67 @@
+arithmetic operator: +,-,*,/, %, **, typeof, ~~
+bitwise operator: &, |, ~
+comparison operator: >,>=,==,===,!=,!==
+logical operator: &&, ||,!
+ 
+selection: 1 - way, 2 - way, multi - way: switch - case - break - default
+ 
+loop: for (I, T, U) S,  while (T) {S,U},
+do - while: I, do{S, U} while(T);
+ 
+the "break" keyword in loop control:
+while (true)
+{ s+= i++; //(s = s + i; i = i + 1;);
+if (i == 11) break;
+}
+ 
+The "continue" key word in loop control:
+nice conparison: "break" = drop out college
+for (;;)
+{
+Task1;
+if (T)
+{
+Task2;
+}
+Task3;
+}
+rewrite to
+for(;;)
+{
+Task1;
+if (!T) continue;
+Task2;
+}
+s += i;
+i++;
+if (i > 100) break;
+}
+ 
+List in javascript == C's array + linked list
+resizable, dynamic
+let a = [];
+let b = [1, 3, 4];
+let c = new Array(10); //[null, null, null,....]
+
+List in javascript == C's array + linked list
+resizable, dynamic
+let a = [];
+let b = [1, 3, 4];
+let c = new Array(10); //[null, null, null,....]
+ 
+add on tail: a.push(2);
+remove from tail: let y = a.pop()
+remove from middle a.splice(starting index,
+numberOfelements TobeRemoved),e.g,
+a.splice(2, 4);// starting from index 2, remove 4
+elements
+insert into somewhere in middle:
+a.splice(2, 0, 4);
+
+To make dynamic web contents,
+let str = "<div ";
+str += a1;
+str += b2;
+str += "dfgfgf";
+str.push("dfgfgf");
+let htmlcode = str.join("");
